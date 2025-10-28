@@ -12,7 +12,7 @@ spring:
 
   data:
     mongodb:
-      uri:  mongodb://localhost:27017/orderDB
+      uri:  mongodb+srv://orderuser:123@cluster0.nodgvej.mongodb.net/orderdb?retryWrites=true&w=majority
       host: localhost
       port: 27017
       database: orderDB

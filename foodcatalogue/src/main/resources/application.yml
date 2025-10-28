@@ -10,7 +10,7 @@ spring:
   application:
     name: FOOD-CATALOGUE-SERVICE
   datasource:
-    url: jdbc:mysql://localhost:3306/foodcataloguedb
+    url: jdbc:mysql://localhost:3307/foodcataloguedb
     password: jeol_pass
     username: jeol_foodcatalogue
     driver-class-name: com.mysql.cj.jdbc.Driver

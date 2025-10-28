@@ -1,0 +1,29 @@
+
+spring:
+  application:
+    name: FOODCATALOGUE-SERVICE
+
+server:
+  port: 9095
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8762/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+  instance:
+    hostname: foodcatalogue-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
